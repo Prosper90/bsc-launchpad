@@ -1,24 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from "./components/nav/Nav";
+import Body from "./components/body/Body";
+import Pool from './components/pool/Pool';
+import Staking from './components/staking/Staking';
+import Buybas from './components/buybas/Buybas';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='main'>
+       <Nav className="App" />
+
+       <Switch>
+         <Route exact path="/">
+           <Body className="Body" />
+         </Route>
+
+         <Route  path="/pool">
+           <Pool className="Pool" />
+         </Route>
+
+         <Route  path="/staking">
+           <Staking className="Staking" />
+         </Route>
+
+         <Route  path="/buying">
+           <Buybas className="Buybas" />
+         </Route>
+     
+       </Switch>
+
+     </div>
+    </Router>
   );
 }
 

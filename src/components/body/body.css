@@ -1,0 +1,431 @@
+.body-container {
+    height: 81vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 39px;
+    background-image: url(../../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.body-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.body-container .eth-view {
+    position: relative;
+    flex-basis: 50em;
+    height: 80vh;
+    margin-left: 20px;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-container .main-page {
+  position: relative;
+  width: 50em;
+  height: 80vh;
+  margin-left: 20px;
+  /* background-color: blue; */
+  color: #F5F5F5;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.main-page .main-content{
+  display: flex;
+  flex-direction: column;
+  width: 83%;
+  padding-left: 74px;
+  margin-top: 48px;
+  gap: 45px;
+}
+
+.main-content .welcome {
+  display: flex;
+  height: 5.5em;
+} 
+
+.main-content .welcome-more {
+  padding-left: 50px;
+  /* padding-bottom: 41px; */
+  height: 40px;
+}
+
+
+.main-page .main-content h2 {
+  color: #F05454;
+  font-size: 58px;
+}
+
+.main-page .main-content p {
+  margin-bottom: 0px;
+  padding-top: 46px;
+  padding-left: 8px;
+}
+
+
+.button-contain {
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-contain .button {
+  border: none;
+  width: 16em;
+  height: 3em;
+  background-color: #F05454;
+  color: #F5F5F5;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.button-contain .button-2 {
+  border: 1px solid #F5F5F5;
+  width: 14em;
+  height: 3em;
+  background-color: transparent;
+  color: #F5F5F5;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.button-2 i {
+  font-size: 24px;
+    color: #F05454;
+    margin-left: 15px;
+}
+
+
+.littleinfo-contain {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 23px;
+}
+
+.littleinfo-contain .littleinfo {
+  background-color: #222;
+  text-align: center;
+  width: 14em;
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 6.2px;
+}
+
+
+
+
+.body-container .orbits-container {
+    position: relative;
+    flex-basis: 50em;
+    height: 80vh;
+    margin-left: 20px;
+    background-image: url(../../img/backgroundlines.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+.orbits-container .sun {
+  background-color: yellow;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    position: absolute;
+    top: 198px;
+    right: 390px;
+}
+
+
+
+.orbits-container .points-0 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 254px;
+  right: 408px;
+}
+
+.orbits-container .points-1 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 254px;
+  right: 342px;
+}
+
+.orbits-container .points-2 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 226px;
+  right: 446px;
+}
+
+.orbits-container .points-3 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 226px;
+  right: 286px;
+}
+
+.orbits-container .points-4 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 306px;
+  right: 183px;
+}
+
+
+.orbits-container .points-5 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 310px;
+  right: 136px;
+}
+
+.orbits-container .points-6 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 222px;
+  right: 755px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 807px) {
+
+  .body-container .orbits-container {
+    position: relative;
+    flex-basis: 47em;
+    height: 80vh;
+    margin-left: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+.orbits-container .sun {
+  background-color: yellow;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  top: 200px;
+  right: 361px;
+}
+
+
+.orbits-container .points-0 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 254px;
+  right: 392px;
+}
+
+.orbits-container .points-1 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 255px;
+  right: 328px;
+}
+
+
+.orbits-container .points-2 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 228px;
+  right: 426px;
+}
+
+
+.orbits-container .points-3 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 232px;
+  right: 281px;
+}
+
+
+.orbits-container .points-4 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 300px;
+  right: 197px;
+}
+
+
+
+.orbits-container .points-5 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 303px;
+  right: 154px;
+}
+
+
+
+.orbits-container .points-6 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 222px;
+  right: 683px;
+}
+  
+}
+
+
+
+
+
+
+@media screen and (max-width: 726px) {
+
+  .body-container .orbits-container {
+    position: relative;
+    flex-basis: 47em;
+    height: 80vh;
+    margin-left: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+.orbits-container .sun {
+  background-color: yellow;
+  width: 19px;
+  height: 19px;
+  border-radius: 100%;
+  position: absolute;
+  top: 205px;
+  right: 331px;
+}
+
+
+.orbits-container .points-0 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 254px;
+  right: 362px;
+}
+
+.orbits-container .points-1 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 255px;
+  right: 307px;
+}
+
+
+.orbits-container .points-2 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 228px;
+  right: 393px;
+}
+
+
+.orbits-container .points-3 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 232px;
+  right: 266px;
+}
+
+
+.orbits-container .points-4 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 297px;
+  right: 192px;
+}
+
+
+
+.orbits-container .points-5 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 299px;
+  right: 144px;
+}
+
+
+
+.orbits-container .points-6 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 222px;
+  right: 635px;
+}
+  
+}
+
+
+

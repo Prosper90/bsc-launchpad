@@ -1,0 +1,126 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+
+.nav-container .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+
+
+.nav-container .nav-link-container {
+    width: 47em;
+    padding-top: 10px;
+}
+
+
+.nav-container .nav-link-container .nav-link-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.nav-link-ul li{
+ list-style-type: none;
+ 
+}
+
+.nav-link-ul li a{
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-connect {
+    background-color: #F05454;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.1em;
+    padding: 9px;
+    color: #F5F5F5;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.nav-container button {
+    display: none;
+}
+
+
+.nav-container .nav-link-container .nav-link-mobile-ul {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+ 
+    .nav-container button {
+        display: inline-block;
+        width: 5em;
+        font-size: 23px;
+        background: transparent;
+        color: #FFF2F9;
+        margin-bottom: 37px;
+        border: none;
+    }
+
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+    }
+    
+
+
+    .nav-container .nav-link-container {
+        width: 100vw;
+        padding-top: 10px;
+        height: 19vh;
+    }
+
+    body{
+        position: relative;
+      }
+    
+    
+    .nav-container .nav-link-container .nav-link-ul{
+        display: none;
+    }
+
+
+    .nav-container .nav-link-container .nav-link-mobile-ul {
+        display: inline-block;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -3px;
+        height: 300%;
+        z-index: 999999999;
+    }
+
+
+
+
+    
+
+
+}

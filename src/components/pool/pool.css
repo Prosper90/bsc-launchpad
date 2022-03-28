@@ -1,0 +1,35 @@
+.pool-container {
+    height: 81vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 39px;
+    background-image: url(../../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.pool-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+
+
+.pool-container .pool-view {
+    position: relative;
+    flex-basis: 50em;
+    height: 80vh;
+    margin-left: 20px;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
