@@ -83,6 +83,7 @@ export default function Body() {
 
   const [getMoreState, setgetMoreState] = useState({});
   const [changeChainView, setchangeChainView] = useState("main");
+  const [getDirection, changeDirection] = useState(false)
 
 
   
@@ -95,6 +96,7 @@ export default function Body() {
        setgetMoreState(value);
     }
     })
+    changeDirection(false);
   }
 
   const switchChainView = (data) =>{
@@ -102,10 +104,13 @@ export default function Body() {
       setchangeChainView("eth")
     } else {
       setchangeChainView("bnb")
+      changeDirection(true)
     }
     //console.log("props connected");
     //console.log(data + " for parent")
   }
+
+
 
    
   
@@ -142,11 +147,11 @@ export default function Body() {
         
         <div className='main-content'>
 
-          <div>
+          <div className='main-content-holder'>
           <div className='welcome'><h2>Welcome</h2> <p>to BSC LaunchPad</p></div>
-          <div className='welcome-more'>Welcome to Red Kite, a cutting-edge launchpad and Defi 
-          platform powered by PolkaFoundry.
-          Hold $PKF to access hand-picked
+          <div className='welcome-more'>Welcome to lorem ipsum, a cutting-edge launchpad and Defi 
+          platform powered by sponsors.
+          Buy and hold Bas for rewards
           </div>
           </div>
 
@@ -184,6 +189,7 @@ export default function Body() {
         eachData={getMoreState}  
         className='tokeninfo-container'
         changeTokenView={changeChainView} 
+        getDirection={getDirection}
          />
 
         

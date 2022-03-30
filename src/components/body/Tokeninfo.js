@@ -5,12 +5,23 @@ export default function Tokeninfo(props) {
 
 
   const [currentChain, chooseChain] = useState(true);
-  console.log(props)
+  const [showchainInfo, changeshowchainInfo] = useState(true)
+  
+
+  //console.log(props)
+  //console.log(getDirection +" before switchInfo");
+  //console.log("directionInfo is  "+directionInfo)
+  //console.log(Object.keys(props.eachData).length);
   //console.log(props.changeTokenView)
   
 
 
   
+  const switchInfo = () => {
+    changeshowchainInfo(false);
+    //props.changeDirection(true)
+    //console.log(props.getDirection +" after switchInfo");
+  }
   
   
 
@@ -21,45 +32,70 @@ export default function Tokeninfo(props) {
     } else {
       chooseChain(false)
     }
-    //console.log(data+ " for child");
-    //console.log("clicked")
   }
 
   return (
     <div className='tokeninfo-container'>
 
-      <div className='choose-chain'>
 
-        <button onClick={()=> switchChain("eth")} className={ currentChain === false ? "eth" : "non-eth " }  > ETHEREUM </button>
+      
+      { showchainInfo
+      ?(
+        <button onClick={switchInfo} className='make-chainchoice-button'>
+        choose chain
+        </button>
+      )
+      :
+      (
+        <div className='choose-chain'>
+          <button onClick={()=> switchChain("eth")} className={ currentChain === false ? "eth" : "non-eth " }  > ETHEREUM </button>
 
-        <button onClick={()=> switchChain("bnb")} className={ currentChain === true ? "bnb" : "non-bnb" } > BINANCE </button>
+          <button onClick={()=> switchChain("bnb")} className={ currentChain === true ? "bnb" : "non-bnb" } > BINANCE </button>
+        </div>
+      )
+      }
+     
 
 
-      </div>
  
        { props.changeTokenView === "bnb"
        ?(
             <div className='info'>
 
-
-            <div className='head-info'>
-              
-            <h5>{props.eachData.tokenName}</h5>
-
-            <div className='detail-info'>
-              <div className='detail-info-info'><p>votes</p>    <p>{props.eachData.votes}</p></div>
-              <div className='detail-info-info'><p>MC</p>    <p>$ {props.eachData.MC}</p></div>
-            </div>
-
-            </div>
-
-
-            <div className='text-info'>
-              <p> {props.eachData.tokenDescription} </p>
-            </div>
-
-            <a className='vote-button' href='vote'> vote </a>
+            {props.getDirection 
+            ?(
             
+              <div className='direct'>
+                click on the project planet to get more info
+              </div>
+
+            )
+            :
+            (
+              <>
+              <div className='head-info'>
+              
+              <h5>{props.eachData.tokenName}</h5>
+  
+              <div className='detail-info'>
+                <div className='detail-info-info'><p>votes</p><p>{props.eachData.votes}</p></div>
+                <div className='detail-info-info'><p>MC</p><p>$ {props.eachData.MC}</p></div>
+              </div>
+  
+              </div>
+  
+              
+              <div className='text-info'>
+                {props.eachData.tokenDescription}
+              </div>
+              
+   
+              <a className='vote-button' href='vote'> vote </a>
+              </>
+
+            )}
+   
+     
         </div>
        ) 
       : props.changeTokenView === "eth" 

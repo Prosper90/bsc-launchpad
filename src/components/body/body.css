@@ -1,5 +1,6 @@
 .body-container {
     height: 81vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -140,6 +141,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 
@@ -149,79 +151,77 @@
 
 .orbits-container .sun {
   background-color: yellow;
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 100%;
-    position: absolute;
-    top: 198px;
-    right: 390px;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  top: 71px;
+  right: -386px;
 }
 
 
 
 .orbits-container .points-0 {
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 100%;
-  position: absolute;
-  bottom: 254px;
-  right: 408px;
+    width: 1.5em;
+    border-radius: 100%;
+    position: relative;
+    bottom: -227px;
+    right: -367px;
 }
+
 
 .orbits-container .points-1 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 254px;
-  right: 342px;
+  position: relative;
+  bottom: -208px;
+  right: -432px;
 }
 
 .orbits-container .points-2 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 226px;
-  right: 446px;
+  position: relative;
+  bottom: -218px;
+  right: -325px;
 }
 
 .orbits-container .points-3 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 226px;
-  right: 286px;
+  position: relative;
+  bottom: -200px;
+  right: -484px;
 }
+
 
 .orbits-container .points-4 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 306px;
-  right: 183px;
+  position: relative;
+  bottom: -98px;
+  right: -584px;
 }
+
 
 
 .orbits-container .points-5 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 310px;
-  right: 136px;
+  position: relative;
+  bottom: -77px;
+  right: -629px;
 }
 
 .orbits-container .points-6 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 222px;
-  right: 755px;
+  position: relative;
+  bottom: -154px;
+  right: -13px;
 }
+
+
 
 
 
@@ -242,74 +242,74 @@
 
 
 
+
 .orbits-container .sun {
   background-color: yellow;
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  top: 200px;
-  right: 361px;
+  position: relative;
+  top: 71px;
+  right: -355px;
 }
+
 
 
 .orbits-container .points-0 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 254px;
-  right: 392px;
+  position: relative;
+  bottom: -228px;
+  right: -348px;
 }
+
 
 .orbits-container .points-1 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 255px;
-  right: 328px;
+  position: relative;
+  bottom: -209px;
+  right: -403px;
 }
+
 
 
 .orbits-container .points-2 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 228px;
-  right: 426px;
+  position: relative;
+  bottom: -216px;
+  right: -313px;
 }
+
+
+
 
 
 .orbits-container .points-3 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 232px;
-  right: 281px;
+  position: relative;
+  bottom: -196px;
+  right: -448px;
 }
 
 
 .orbits-container .points-4 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 300px;
-  right: 197px;
+  position: relative;
+  bottom: -110px;
+  right: -534px;
 }
 
 
 
 .orbits-container .points-5 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 303px;
-  right: 154px;
+  position: relative;
+  bottom: -89px;
+  right: -575px;
 }
 
 
@@ -318,10 +318,13 @@
   width: 1.5em;
   height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 222px;
-  right: 683px;
+  position: relative;
+  right: -49px;
 }
+
+
+
+
   
 }
 
@@ -329,8 +332,7 @@
 
 
 
-
-@media screen and (max-width: 726px) {
+@media screen and (max-width: 727px) {
 
   .body-container .orbits-container {
     position: relative;
@@ -344,88 +346,1950 @@
 
 
 
+
 .orbits-container .sun {
   background-color: yellow;
-  width: 19px;
-  height: 19px;
+  width: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  top: 205px;
-  right: 331px;
+  position: relative;
+  top: 35px;
+  right: -356px;
 }
 
 
 .orbits-container .points-0 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 254px;
-  right: 362px;
+  position: relative;
+  bottom: -225px;
+  right: -333px;
 }
+
+
 
 .orbits-container .points-1 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 255px;
-  right: 307px;
+  position: relative;
+  bottom: -199px;
+  right: -391px;
 }
+
+
 
 
 .orbits-container .points-2 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 228px;
-  right: 393px;
+  position: relative;
+  bottom: -200px;
+  right: -302px;
 }
+
 
 
 .orbits-container .points-3 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 232px;
-  right: 266px;
+  position: relative;
+  bottom: -174px;
+  right: -434px;
 }
+
+
 
 
 .orbits-container .points-4 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 297px;
-  right: 192px;
+  position: relative;
+  bottom: -85px;
+  right: -515px;
 }
 
 
 
 .orbits-container .points-5 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 299px;
-  right: 144px;
+  position: relative;
+  bottom: -59px;
+  right: -558px;
 }
 
 
 
 .orbits-container .points-6 {
   width: 1.5em;
-  height: 1.5em;
   border-radius: 100%;
-  position: absolute;
-  bottom: 222px;
-  right: 635px;
+  position: relative;
+  bottom: -114px;
+  right: -48px;
 }
+
+
+
+
   
 }
 
+
+
+
+
+@media screen and (max-width: 709px) {
+
+
+
+  
+  .body-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    padding-top: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* flex-wrap: wrap; */
+}
+
+
+
+
+  .body-container .main-page {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* margin-left: 20px; */
+    /* background-color: blue; */
+    color: #F5F5F5;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: 0;
+}
+
+
+.main-page .main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 0px; 
+  margin-top: 0px;
+  gap: 45px;
+}
+
+
+
+
+.main-page .main-content h2 {
+  color: #F05454;
+  font-size: 42px;
+}
+
+
+
+
+.main-page .main-content p {
+  margin-bottom: 0px;
+  padding-top: 34px;
+  padding-left: 3px;
+  font-size: 10px;
+}
+
+
+.main-content .welcome {
+    display: flex;
+    height: 5.5em;
+    width: 100%;
+}
+
+
+
+.main-content .welcome-more {
+  padding-left: 0px; 
+  /* padding-bottom: 41px; */
+  height: 40px;
+}
+
+
+.button-contain {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+
+.button-contain .button {
+  border: none;
+  width: 10em;
+  height: 3em;
+  background-color: #F05454;
+  color: #F5F5F5;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+
+.button-contain .button-2 {
+  border: 1px solid #F5F5F5;
+  width: 10em;
+  height: 3em;
+  background-color: transparent;
+  color: #F5F5F5;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+
+
+.littleinfo-contain {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -4px;
+  width: 100%;
+  /* margin-right: 30px; */
+}
+
+
+
+.littleinfo-contain .littleinfo {
+  background-color: #222;
+  text-align: center;
+  width: 100%;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 6.2px;
+}
+
+
+
+
+
+
+
+
+
+  .body-container .orbits-container {
+    position: relative;
+    flex-basis: 47em;
+    height: 80vh;
+    margin-left: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+
+.orbits-container .sun {
+  background-color: yellow;
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  top: 36px;
+  right: -345px;
+}
+
+
+.orbits-container .points-0 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -225px;
+  right: -322px;
+}
+
+
+
+.orbits-container .points-1 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -200px;
+  right: -377px;
+}
+
+
+
+.orbits-container .points-2 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -199px;
+  right: -291px;
+}
+
+
+.orbits-container .points-3 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -174px;
+  right: -418px;
+}
+
+
+
+.orbits-container .points-4 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -88px;
+  right: -498px;
+}
+
+
+
+.orbits-container .points-5 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -61px;
+  right: -538px;
+}
+
+
+.orbits-container .points-6 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -111px;
+  right: -47px;
+}
+
+
+
+  
+}
+
+
+
+@media screen and (max-width: 683px) {
+
+  .orbits-container .sun {
+    background-color: yellow;
+    width: 1.5em;
+    border-radius: 100%;
+    position: relative;
+    top: 38px;
+    right: -331px;
+}
+
+
+.orbits-container .points-0 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -225px;
+  right: -314px;
+}
+
+
+.orbits-container .points-1 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -200px;
+  right: -366px;
+}
+
+
+.orbits-container .points-2 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -198px;
+  right: -283px;
+}
+
+
+.orbits-container .points-3 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -174px;
+  right: -406px;
+}
+
+
+.orbits-container .points-4 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -88px;
+  right: -483px;
+}
+
+
+.orbits-container .points-5 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -61px;
+  right: -524px;
+}
+
+
+.orbits-container .points-6 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -111px;
+  right: -46px;
+}
+
+
+}
+
+
+
+
+@media screen and (max-width: 658px) {
+
+  .orbits-container .sun {
+    background-color: yellow;
+    width: 1.5em;
+    border-radius: 100%;
+    position: relative;
+    top: -1px;
+    right: -298px;
+}
+
+.orbits-container .points-0 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -191px;
+  right: -290px;
+}
+
+.orbits-container .points-1 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -163px;
+  right: -340px;
+}
+
+
+.orbits-container .points-2 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -160px;
+  right: -262px;
+}
+
+
+.orbits-container .points-3 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -135px;
+  right: -377px;
+}
+
+
+.orbits-container .points-4 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -54px;
+  right: -448px;
+}
+
+
+.orbits-container .points-5 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -27px;
+  right: -483px;
+}
+
+
+.orbits-container .points-6 {
+  width: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  bottom: -71px;
+  right: -42px;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 625px) {
+
+  .orbits-container .sun {
+    background-color: yellow;
+    width: 1.5em;
+    border-radius: 100%;
+    position: relative;
+    top: 63px;
+    right: -284px;
+}
+
+.orbits-container .points-0 {
+  border-radius: 100%;
+  position: relative;
+  bottom: -198px;
+  right: -284px;
+  font-size: 10px;
+}
+
+.orbits-container .points-1 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -181px;
+  right: -333px;
+}
+
+
+.orbits-container .points-2 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -184px;
+  right: -256px;
+}
+
+
+.orbits-container .points-3 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -167px;
+  right: -368px;
+}
+
+
+.orbits-container .points-4 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -95px;
+  right: -437px;
+}
+
+
+.orbits-container .points-5 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -77px;
+  right: -469px;
+}
+
+
+.orbits-container .points-6 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -128px;
+  right: -44px;
+}
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 608px) {
+  
+
+  
+  .body-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    padding-top: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* flex-wrap: wrap; */
+}
+
+
+
+
+  .body-container .main-page {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* margin-left: 20px; */
+    /* background-color: blue; */
+    color: #F5F5F5;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: 0;
+}
+
+
+.main-page .main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 0px; 
+  margin-top: 0px;
+  gap: 45px;
+}
+
+
+
+
+.main-page .main-content h2 {
+  color: #F05454;
+  font-size: 42px;
+}
+
+
+
+
+.main-page .main-content p {
+  margin-bottom: 0px;
+  padding-top: 34px;
+  padding-left: 3px;
+  font-size: 10px;
+}
+
+
+.main-content .welcome {
+    display: flex;
+    height: 5.5em;
+    width: 100%;
+}
+
+
+
+.main-content .welcome-more {
+  padding-left: 0px; 
+  /* padding-bottom: 41px; */
+  height: 40px;
+}
+
+
+.button-contain {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+
+.button-contain .button {
+  border: none;
+  width: 10em;
+  height: 3em;
+  background-color: #F05454;
+  color: #F5F5F5;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+
+.button-contain .button-2 {
+  border: 1px solid #F5F5F5;
+  width: 10em;
+  height: 3em;
+  background-color: transparent;
+  color: #F5F5F5;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+
+
+.littleinfo-contain {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -4px;
+  width: 100%;
+  /* margin-right: 30px; */
+}
+
+
+
+.littleinfo-contain .littleinfo {
+  background-color: #222;
+  text-align: center;
+  width: 100%;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 6.2px;
+}
+
+
+
+
+
+
+  .orbits-container .sun {
+    background-color: yellow;
+    width: 1.5em;
+    border-radius: 100%;
+    position: relative;
+    top: 93px;
+    right: -289px;
+}
+
+.orbits-container .points-0 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -199px;
+  right: -278px;
+}
+
+.orbits-container .points-1 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -187px;
+  right: -327px;
+}
+
+
+.orbits-container .points-2 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -195px;
+  right: -254px;
+}
+
+
+.orbits-container .points-3 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -183px;
+  right: -363px;
+}
+
+
+.orbits-container .points-4 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -118px;
+  right: -430px;
+}
+
+
+.orbits-container .points-5 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -103px;
+  right: -464px;
+}
+
+
+.orbits-container .points-6 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -158px;
+  right: -42px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 521px) {
+
+  .orbits-container .sun {
+    background-color: yellow;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 100%;
+    position: relative;
+    top: 106px;
+    right: -248px;
+}
+
+.orbits-container .points-0 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -200px;
+  right: -240px;
+}
+
+.orbits-container .points-1 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -189px;
+  right: -275px;
+}
+
+
+.orbits-container .points-2 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -194px;
+  right: -213px;
+}
+
+
+.orbits-container .points-3 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -182px;
+  right: -308px;
+}
+
+
+.orbits-container .points-4 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -124px;
+  right: -363px;
+}
+
+
+.orbits-container .points-5 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -112px;
+  right: -391px;
+}
+
+
+.orbits-container .points-6 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -157px;
+  right: -34px;
+}
+
+
+}
+
+
+
+
+@media screen and (max-width: 495px) {
+
+ 
+  
+  .body-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    padding-top: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* flex-wrap: wrap; */
+}
+
+
+
+
+  .body-container .main-page {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* margin-left: 20px; */
+    /* background-color: blue; */
+    color: #F5F5F5;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: 0;
+}
+
+
+.main-page .main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 0px; 
+  margin-top: 0px;
+  gap: 45px;
+}
+
+
+
+
+.main-page .main-content h2 {
+  color: #F05454;
+  font-size: 42px;
+}
+
+
+
+
+.main-page .main-content p {
+  margin-bottom: 0px;
+  padding-top: 34px;
+  padding-left: 3px;
+  font-size: 10px;
+}
+
+
+.main-content .welcome {
+    display: flex;
+    height: 5.5em;
+    width: 100%;
+}
+
+
+
+.main-content .welcome-more {
+  padding-left: 0px; 
+  /* padding-bottom: 41px; */
+  height: 40px;
+}
+
+
+.button-contain {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+
+.button-contain .button {
+  border: none;
+  width: 10em;
+  height: 3em;
+  background-color: #F05454;
+  color: #F5F5F5;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+
+.button-contain .button-2 {
+  border: 1px solid #F5F5F5;
+  width: 10em;
+  height: 3em;
+  background-color: transparent;
+  color: #F5F5F5;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+
+
+.littleinfo-contain {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -4px;
+  width: 100%;
+  /* margin-right: 30px; */
+}
+
+
+
+.littleinfo-contain .littleinfo {
+  background-color: #222;
+  text-align: center;
+  width: 100%;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 6.2px;
+}
+
+
+
+
+
+
+
+.body-container .orbits-container {
+  flex-basis: 100%;
+  background-image: url(../../img/gimpedit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+
+
+
+.orbits-container .sun {
+  background-color: yellow;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  right: 251px;
+  top: 104px;
+}
+
+
+
+.orbits-container .points-0 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 195px;
+  bottom: 321px;
+  /* background-color: green; */
+}
+
+.orbits-container .points-1 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 339px;
+  bottom: 265px;
+}
+
+.orbits-container .points-2 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 394px;
+  bottom: 238px;
+}
+
+
+
+.orbits-container .points-3 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 373px;
+  bottom: 361px;
+}
+
+
+.orbits-container .points-4 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 270px;
+  bottom: 400px;
+}
+
+
+.orbits-container .points-5 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 165px;
+  bottom: 94px;
+}
+
+
+.orbits-container .points-6 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 62px;
+  bottom: 266px;
+}
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 464px) {
+
+
+  .body-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    padding-top: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* flex-wrap: wrap; */
+}
+
+
+
+
+  .body-container .main-page {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* margin-left: 20px; */
+    /* background-color: blue; */
+    color: #F5F5F5;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: 0;
+}
+
+
+.main-page .main-content {
+  display: flex;
+  flex-direction: column;
+  width: 91%;
+  /* padding-left: 0px; */
+  margin-top: 0px;
+  gap: 45px;
+  padding: 16px;
+}
+
+
+
+
+.main-page .main-content h2 {
+  color: #F05454;
+  font-size: 42px;
+}
+
+
+
+
+.main-page .main-content p {
+  margin-bottom: 0px;
+  padding-top: 34px;
+  padding-left: 3px;
+  font-size: 10px;
+}
+
+
+.main-content .welcome {
+    display: flex;
+    height: 5.5em;
+    width: 100%;
+    font-size: 13px;
+}
+
+
+
+.main-content .welcome-more {
+  padding-left: 0px; 
+  /* padding-bottom: 41px; */
+  height: 40px;
+  font-size: 15px;
+}
+
+
+.button-contain {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+
+.button-contain .button {
+  border: none;
+  width: 10em;
+  height: 3em;
+  background-color: #F05454;
+  color: #F5F5F5;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+
+.button-contain .button-2 {
+  border: 1px solid #F5F5F5;
+  width: 10em;
+  height: 3em;
+  background-color: transparent;
+  color: #F5F5F5;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+
+
+.littleinfo-contain {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -4px;
+  width: 100%;
+  /* margin-right: 30px; */
+}
+
+
+
+.littleinfo-contain .littleinfo {
+  background-color: #222;
+  text-align: center;
+  width: 100%;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 6.2px;
+  font-size: 14px;
+}
+
+
+
+
+
+.body-container .orbits-container {
+  flex-basis: 100%;
+  background-image: url(../../img/gimpedit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+
+
+
+.orbits-container .sun {
+  background-color: yellow;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  right: 204px;
+  top: 107px;
+}
+
+
+
+.orbits-container .points-0 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 149px;
+  bottom: 314px;
+  /* background-color: green; */
+}
+
+.orbits-container .points-1 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 290px;
+  bottom: 265px;
+}
+
+.orbits-container .points-2 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 344px;
+  bottom: 237px;
+}
+
+
+
+.orbits-container .points-3 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 321px;
+  bottom: 354px;
+}
+
+
+.orbits-container .points-4 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 223px;
+  bottom: 393px;
+
+}
+
+
+.orbits-container .points-5 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 123px;
+  bottom: 98px;
+}
+
+
+.orbits-container .points-6 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 24px;
+  bottom: 263px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+  margin-top: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+
+
+
+  .body-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    padding-top: 39px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* flex-wrap: wrap; */
+}
+
+
+
+
+
+
+.body-container .main-page {
+  position: relative;
+  width: 94%;
+  height: 100%;
+  /* margin-left: 20px; */
+  /* background-color: blue; */
+  color: #F5F5F5;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 10px;
+  margin-left: 0;
+}
+
+
+
+
+.main-page .main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 0;
+  margin-top: -16px;
+  gap: 45px;
+}
+
+.main-content .main-content-holder {
+  width: 100%;
+}
+
+
+
+
+.main-content .welcome {
+  display: flex;
+  height: 5.5em;
+  width: 100%;
+}
+
+
+
+
+.main-page .main-content h2 {
+  color: #F05454;
+  font-size: 42px;
+}
+
+
+.main-page .main-content p {
+  margin-bottom: 0px;
+  padding-top: 34px;
+  padding-left: 3px;
+  font-size: 10px;
+}
+
+
+
+.main-content .welcome-more {
+  /* padding-bottom: 41px; */
+  height: 40px;
+  padding-left: 10px;
+}
+
+
+
+
+.button-contain {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+
+
+.button-contain .button {
+  border: none;
+  width: 10em;
+  height: 3em;
+  background-color: #F05454;
+  color: #F5F5F5;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+
+.button-contain .button-2 {
+  border: 1px solid #F5F5F5;
+  width: 11em;
+  height: 3em;
+  background-color: transparent;
+  color: #F5F5F5;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+
+.littleinfo-contain {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -4px;
+  width: 100%;
+  /* margin-right: 30px; */
+}
+
+
+
+.littleinfo-contain .littleinfo {
+  background-color: #222;
+  text-align: center;
+  width: 14em;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 6.2px;
+  font-size: 14px;
+}
+
+
+
+
+.body-container .orbits-container {
+  flex-basis: 100%;
+  background-image: url(../../img/gimpedit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+
+
+
+.orbits-container .sun {
+  background-color: yellow;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  right: 204px;
+  top: 107px;
+}
+
+
+
+.orbits-container .points-0 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 149px;
+  bottom: 314px;
+  /* background-color: green; */
+}
+
+.orbits-container .points-1 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 290px;
+  bottom: 265px;
+}
+
+.orbits-container .points-2 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 344px;
+  bottom: 237px;
+}
+
+
+
+.orbits-container .points-3 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 321px;
+  bottom: 354px;
+}
+
+
+.orbits-container .points-4 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 223px;
+  bottom: 393px;
+
+}
+
+
+.orbits-container .points-5 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 123px;
+  bottom: 98px;
+}
+
+
+.orbits-container .points-6 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 24px;
+  bottom: 263px;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 366px) {
+
+
+  .main-page .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    margin-top: -16px;
+    gap: 36px;
+    align-items: center;
+}
+
+  .body-container .main-page {
+    position: relative;
+    width: 92%;
+    height: 100%;
+    /* margin-left: 20px; */
+    /* background-color: blue; */
+    color: #F5F5F5;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 10px; */
+    margin-left: 0px;
+}
+
+
+.main-page .main-content h2 {
+  color: #F05454;
+  font-size: 34px;
+}
+
+
+.main-content .welcome {
+  display: flex;
+  height: 4.5em;
+  width: 100%;
+}
+ 
+  
+.main-content .welcome-more {
+  padding-left: 0px;
+  /* padding-bottom: 41px; */
+  height: 40px;
+  font-size: 14px;
+}
+
+
+
+.button-contain {
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 19em;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+.body-container .orbits-container {
+  flex-basis: 100%;
+  background-image: url(../../img/gimpedit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+
+
+
+.orbits-container .sun {
+  background-color: yellow;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  position: absolute;
+  right: 187px;
+  top: 107px;
+}
+
+
+
+.orbits-container .points-0 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 133px;
+  bottom: 314px;
+  /* background-color: green; */
+}
+
+.orbits-container .points-1 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 273px;
+  bottom: 266px;
+}
+
+.orbits-container .points-2 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 325px;
+  bottom: 237px;
+}
+
+
+
+.orbits-container .points-3 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 307px;
+  bottom: 353px;
+}
+
+
+.orbits-container .points-4 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 208px;
+  bottom: 392px;
+}
+
+
+.orbits-container .points-5 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 106px;
+  bottom: 97px;
+}
+
+
+.orbits-container .points-6 {
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 10px;
+  bottom: 266px;
+}
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 305px) {
+
+  
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+
+
+
+  .body-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    padding-top: 39px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* flex-wrap: wrap; */
+}
+
+
+
+
+
+
+.body-container .main-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* margin-left: 20px; */
+  /* background-color: blue; */
+  color: #F5F5F5;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 0px;
+  margin-left: 0;
+}
+
+
+
+
+.main-page .main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 0;
+  margin-top: -16px;
+  gap: 45px;
+}
+
+.main-content .main-content-holder {
+  width: 100%;
+}
+
+
+
+
+.main-content .welcome {
+  display: flex;
+  height: 5.5em;
+  width: 100%;
+}
+
+
+
+
+.main-page .main-content h2 {
+  color: #F05454;
+  font-size: 42px;
+}
+
+
+.main-page .main-content p {
+  margin-bottom: 0px;
+  padding-top: 34px;
+  padding-left: 3px;
+  font-size: 10px;
+}
+
+
+
+.main-content .welcome-more {
+  padding-left: -9px;
+  /* padding-bottom: 41px; */
+  height: 40px;
+}
+
+
+
+
+.button-contain {
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 19em;
+  margin-top: 30px;
+}
+
+
+
+
+.button-contain .button {
+  border: none;
+  width: 10em;
+  height: 3em;
+  background-color: #F05454;
+  color: #F5F5F5;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+
+.button-contain .button-2 {
+  border: 1px solid #F5F5F5;
+  width: 11em;
+  height: 3em;
+  background-color: transparent;
+  color: #F5F5F5;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+
+.littleinfo-contain {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -4px;
+  width: 100%;
+  /* margin-right: 30px; */
+}
+
+
+
+.littleinfo-contain .littleinfo {
+  background-color: #222;
+  text-align: center;
+  width: 14em;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 6.2px;
+}
+
+
+  
+}
 
 
