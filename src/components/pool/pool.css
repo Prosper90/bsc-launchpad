@@ -1,34 +1,59 @@
 .pool-container {
-    height: 81vh;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 39px;
-    background-image: url(../../img/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 70px;
+    z-index: 9999999;
+    height: 100%;
+    margin-bottom: 30px;
 }
 
-.pool-container .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
 
-
-
-.pool-container .pool-view {
-    position: relative;
-    flex-basis: 50em;
-    height: 80vh;
-    margin-left: 20px;
+.pool-view-info {
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F05454;
+    height: 50%;
     color: #F5F5F5;
+    gap: 26px;
+}
+
+
+.text-info {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    text-align: center;
+}
+
+.hold-partners-logo {
+    z-index: 999999;
+    width: 90%;
+    align-self: center;
+}
+
+.text-info-two {
+    display: flex;
+    justify-content: space-between;
+    width: 47%;
+}
+
+.info-projects-data {
+    text-align: center;
+    gap: 25px;
+}
+
+.text-info-three {
+    background: #000;
+    color: #F5F5F5;
+    width: 46%;
+    text-align: center;
+    border-radius: 3px;
+    height: 47px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import "./tokeninfo.css"
+import React, { useEffect, useState, useRef } from 'react';
+import "./tokeninfo.css";
+import Typography from '@mui/material/Typography';
+import Astronaut from "../../img/Astronaut.png";
+import World from "../../img/Worldmain.png";
+
 
 export default function Tokeninfo(props) {
 
-
+  
   const [currentChain, chooseChain] = useState(true);
   const [showchainInfo, changeshowchainInfo] = useState(true)
-  
+  //ref
+  const myRef = useRef(null);
 
   //console.log(props)
   //console.log(getDirection +" before switchInfo");
@@ -17,7 +22,7 @@ export default function Tokeninfo(props) {
 
 
   
-  const switchInfo = () => {
+  const switchInfo = (props) => {
     changeshowchainInfo(false);
     //props.changeDirection(true)
     //console.log(props.getDirection +" after switchInfo");
@@ -28,50 +33,59 @@ export default function Tokeninfo(props) {
   const switchChain = (data) => {
     props.switchChainView(data)
     if(data === "bnb"){
-      chooseChain(true)
+      chooseChain(true);
+      props.setTheOutside(false);
     } else {
-      chooseChain(false)
+      chooseChain(false);
+      props.setTheOutside(false);
     }
   }
 
-  return (
-    <div className='tokeninfo-container'>
+  const clearView = () => {
+    props.setClicked(false);
+    props.setTheOutside(false);
+  }
 
 
-      
-      { showchainInfo
-      ?(
-        <button onClick={switchInfo} className='make-chainchoice-button'>
-        choose chain
-        </button>
-      )
-      :
-      (
-        <div className='choose-chain'>
-          <button onClick={()=> switchChain("eth")} className={ currentChain === false ? "eth" : "non-eth " }  > ETHEREUM </button>
+  useEffect(() => {
 
-          <button onClick={()=> switchChain("bnb")} className={ currentChain === true ? "bnb" : "non-bnb" } > BINANCE </button>
-        </div>
-      )
+    const handleClickOutside = (event) => {
+      //console.log(myRef);
+     if(myRef.current === null){
+  
+    } else if( Object.keys(myRef).length !== 0 ) {
+    
+     // console.log("In here");
+      if (!myRef.current.contains(event.target)) {
+          clearView()
+         console.log("called outside click");
       }
-     
+  
+    }
+  
+  
+  
+    };
+    
+  
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+
+
+
+  })
+
+  return (
+    <div className={ props.changeTokenView === "bnb" ? 'tokeninfo-containertwo' : 'tokeninfo-container' } 
+    ref={myRef} >
 
 
  
        { props.changeTokenView === "bnb"
-       ?(
-            <div className='info'>
-
-            {props.getDirection 
-            ?(
+       ?
+        (
+          <div className='info'>
             
-              <div className='direct'>
-                click on the project planet to get more info
-              </div>
-
-            )
-            :
-            (
               <>
               <div className='head-info'>
               
@@ -93,10 +107,11 @@ export default function Tokeninfo(props) {
               <a className='vote-button' href='vote'> vote </a>
               </>
 
-            )}
+            
    
      
         </div>
+
        ) 
       : props.changeTokenView === "eth" 
 
@@ -119,9 +134,34 @@ export default function Tokeninfo(props) {
          <div className='main-info'>
 
             <div className='main-content'>
-               <div className='help'>NEED HELP TO LAUNCH YOUR PROJECT ?</div>
-               <div><button className='contact-button'>Contact Us</button></div>
+               <img className='img-other' src={Astronaut} alt='astronut' />
+               <div>
+                  <Typography variant="caption" display="block" gutterBottom>
+                    About us
+                  </Typography>
+                </div>
             </div>
+
+
+            <div className='main-content' onClick={()=> switchChain("bnb")} >
+               <img className='img-other' src={World} alt='astronut' />
+                  <Typography variant="caption" display="block" gutterBottom>
+                    Projects
+                  </Typography>
+            </div>
+
+
+            <div className='main-content'>
+               <img className='img-other' src={Astronaut} alt='astronut' />
+               <div>
+                  <Typography variant="caption" display="block" gutterBottom>
+                    more
+                  </Typography>
+                </div>
+            </div>
+
+
+
 
           </div>
        )

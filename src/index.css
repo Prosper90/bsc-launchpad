@@ -1,5 +1,5 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&family=Sora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&family=Sora:wght@500&family=Space+Grotesk:wght@500&display=swap');
 
 
 *{
@@ -11,20 +11,35 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Poppins', sans-serif;;
+  font-family: 'Space Grotesk', sans-serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   overflow-x: hidden;
   width: 100%;
+  height: 100%;
+  color: #F5F5F5;
+  background-image: url(../src/img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-root {
+#root {
   margin: 0;
   padding: 0;
+  width: 100%;
+  background-image: url(../src/img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html, body, #app, #app>div {
+  height: 100%
 }

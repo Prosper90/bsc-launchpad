@@ -1,0 +1,16 @@
+.annotation {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 8px;
+    font-weight: 300;
+    background: black;
+    color: #f0f0f0;
+    padding: 2px 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }

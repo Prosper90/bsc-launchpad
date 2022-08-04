@@ -1,15 +1,9 @@
 .staking-container {
-    height: 81vh;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 39px;
-    background-image: url(../../img/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    background-color: #000;
 }
 
 
@@ -24,14 +18,43 @@
   }
 
 
-
-.staking-container .stake-view {
-    position: relative;
-    flex-basis: 50em;
-    height: 80vh;
-    margin-left: 20px;
-    color: #F5F5F5;
+.about-us-container {
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999999;
+    text-align: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about-intro {
+    width: 58%;
+}
+
+
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.socials .border-contain {
+    border: 1px solid #222222;
+    border-radius: 100%;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.socials i {
+    font-size: 17px;
+    color: #F05454;
 }

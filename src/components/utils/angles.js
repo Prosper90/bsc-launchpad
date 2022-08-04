@@ -1,0 +1,1 @@
+export const angleToradians = (angleinDeg) => (Math.PI/180) * angleinDeg 

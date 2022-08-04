@@ -1,31 +1,96 @@
 .body-container {
-    height: 81vh;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     align-items: flex-start;
     padding-top: 39px;
-    background-image: url(../../img/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    flex-wrap: wrap;
+    padding-bottom: 39px;
+    height: 100%;
 }
 
-.body-container .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+
+.body-containerTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  align-items: flex-start;
+  padding-top: 0;
+  padding-bottom: 39px;
+  height: 100%;
 }
+
+
+
+
+.body-container .containbody{
+  display: flex;
+  padding: "30px";
+}
+
+/*
+.body-container .containbodychainactive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: "30px";
+  width: 45%;
+}
+*/
+.body-container .containbodychainforcomplete{
+  display: flex;
+  padding: "30px";
+  width: 100%;
+}
+
+
+
+.get-back {
+  background: linear-gradient(116.29deg, rgba(255, 255, 255, 0.35) -29.94%, rgba(255, 255, 255, 0.26) -29.93%, rgba( 255,255, 255, 0.1) 101.76%);
+  box-shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.15), inset -4px -4px 4px rgba(245, 245, 245, 0.11);
+  position: absolute;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  z-index: 500px;
+  cursor: pointer;
+  top: 10%;
+  left: 9%;
+}
+
+
+
+
+
+
+.orbit-container-cover {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.paginate button {
+  width: 138px;
+  text-align: center;
+  height: 42px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}
+
 
 .body-container .eth-view {
     position: relative;
     flex-basis: 50em;
-    height: 80vh;
+    height: 100%;
     margin-left: 20px;
     color: #F5F5F5;
     display: flex;
@@ -33,25 +98,10 @@
     align-items: center;
 }
 
-.body-container .main-page {
-  position: relative;
-  width: 50em;
-  height: 80vh;
-  margin-left: 20px;
-  /* background-color: blue; */
-  color: #F5F5F5;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-}
 
-.main-page .main-content{
-  display: flex;
-  flex-direction: column;
-  width: 83%;
-  padding-left: 74px;
-  margin-top: 48px;
-  gap: 45px;
+
+.main-content .main-content-holder {
+  width: 80%;
 }
 
 .main-content .welcome {
@@ -60,9 +110,10 @@
 } 
 
 .main-content .welcome-more {
-  padding-left: 50px;
   /* padding-bottom: 41px; */
-  height: 40px;
+  /*height: 40px;*/
+  /*padding-left: 10px;*/
+  padding: 20px;
 }
 
 
@@ -71,55 +122,21 @@
   font-size: 58px;
 }
 
-.main-page .main-content p {
-  margin-bottom: 0px;
-  padding-top: 46px;
-  padding-left: 8px;
-}
 
 
-.button-contain {
-  padding-left: 10px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.button-contain .button {
-  border: none;
-  width: 16em;
-  height: 3em;
-  background-color: #F05454;
-  color: #F5F5F5;
-  font-size: 16px;
-  border-radius: 4px;
-}
-.button-contain .button-2 {
-  border: 1px solid #F5F5F5;
-  width: 14em;
-  height: 3em;
-  background-color: transparent;
-  color: #F5F5F5;
-  font-size: 16px;
-  border-radius: 4px;
-}
-
-.button-2 i {
-  font-size: 24px;
-    color: #F05454;
-    margin-left: 15px;
-}
 
 
 .littleinfo-contain {
   display: flex;
   justify-content: space-around;
   margin-top: 23px;
+  width: 100%;
 }
 
 .littleinfo-contain .littleinfo {
-  background-color: #222;
+  background-color: #181619;
   text-align: center;
-  width: 14em;
+  width: 30%;
   height: 8em;
   display: flex;
   flex-direction: column;
@@ -135,303 +152,170 @@
 .body-container .orbits-container {
     position: relative;
     flex-basis: 50em;
-    height: 80vh;
-    margin-left: 20px;
-    background-image: url(../../img/backgroundlines.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas-contain {
+  width: "100vh";
+  height: "100vh";
+   padding-right: 20px;
+}
+
+.animationholder {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 
 
 
-
-
 .orbits-container .sun {
+  position: absolute;
   background-color: yellow;
   width: 1.5em;
   height: 1.5em;
   border-radius: 100%;
-  position: relative;
-  top: 71px;
-  right: -386px;
+  top: 39%;
+  left: 50%;
+  z-index: 999999999;
 }
 
 
-
-.orbits-container .points-0 {
-    width: 1.5em;
-    border-radius: 100%;
-    position: relative;
-    bottom: -227px;
-    right: -367px;
+.increaseSize {
+  font-size: 24px;
 }
 
-
-.orbits-container .points-1 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -208px;
-  right: -432px;
-}
-
-.orbits-container .points-2 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -218px;
-  right: -325px;
-}
-
-.orbits-container .points-3 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -200px;
-  right: -484px;
-}
-
-
-.orbits-container .points-4 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -98px;
-  right: -584px;
-}
-
-
-
-.orbits-container .points-5 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -77px;
-  right: -629px;
-}
-
-.orbits-container .points-6 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -154px;
-  right: -13px;
-}
-
-
-
-
-
-
-
-
-@media screen and (max-width: 807px) {
-
-  .body-container .orbits-container {
-    position: relative;
-    flex-basis: 47em;
-    height: 80vh;
-    margin-left: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-
-
-
-.orbits-container .sun {
-  background-color: yellow;
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  top: 71px;
-  right: -355px;
-}
-
-
-
-.orbits-container .points-0 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -228px;
-  right: -348px;
-}
-
-
-.orbits-container .points-1 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -209px;
-  right: -403px;
-}
-
-
-
-.orbits-container .points-2 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -216px;
-  right: -313px;
-}
-
-
-
-
-
-.orbits-container .points-3 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -196px;
-  right: -448px;
-}
-
-
-.orbits-container .points-4 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -110px;
-  right: -534px;
-}
-
-
-
-.orbits-container .points-5 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -89px;
-  right: -575px;
-}
-
-
-
-.orbits-container .points-6 {
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  right: -49px;
-}
-
-
-
-
-  
-}
-
-
-
-
-
-@media screen and (max-width: 727px) {
-
-  .body-container .orbits-container {
-    position: relative;
-    flex-basis: 47em;
-    height: 80vh;
-    margin-left: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-
-
-
-.orbits-container .sun {
-  background-color: yellow;
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  top: 35px;
-  right: -356px;
+.normalSize {
+  font-size: 16px;
 }
 
 
 .orbits-container .points-0 {
   width: 1.5em;
   border-radius: 100%;
-  position: relative;
-  bottom: -225px;
-  right: -333px;
+  position: absolute;
+  top: 52.72%;
+  left:45%;
+  transform: translateX(20%);
+  z-index: 9999999;
 }
-
 
 
 .orbits-container .points-1 {
   width: 1.5em;
   border-radius: 100%;
-  position: relative;
-  bottom: -199px;
-  right: -391px;
+  position: absolute;
+  top: 38.8%;
+  left: 60%;
+  transform: translate3d(5px, 38px, 66px);
+  z-index: 9999999999;
 }
-
-
-
 
 .orbits-container .points-2 {
   width: 1.5em;
   border-radius: 100%;
-  position: relative;
-  bottom: -200px;
-  right: -302px;
+  position: absolute;
+    top: 39.5%;
+    left: 28%;
+  transform: translateX(-50%);
+  z-index: 999999999;
 }
-
-
 
 .orbits-container .points-3 {
   width: 1.5em;
   border-radius: 100%;
-  position: relative;
-  bottom: -174px;
-  right: -434px;
+  top: 25.5%;
+  left: 69%;
+  position: absolute;
+  transform: translateX(10%);
+  z-index: 99999999;
 }
-
-
 
 
 .orbits-container .points-4 {
   width: 1.5em;
   border-radius: 100%;
-  position: relative;
-  bottom: -85px;
-  right: -515px;
+  position: absolute;
+  top: 20.8%;
+  left: 35%;
+  transform: translateX(-10%);
+  z-index: 99999999999;
 }
-
 
 
 .orbits-container .points-5 {
   width: 1.5em;
   border-radius: 100%;
-  position: relative;
-  bottom: -59px;
-  right: -558px;
+  position: absolute;
+  top: 20.8%;
+  left: 54%;
+  transform: translateX(-10%);
+  z-index: 99999999;
 }
-
 
 
 .orbits-container .points-6 {
   width: 1.5em;
   border-radius: 100%;
-  position: relative;
-  bottom: -114px;
-  right: -48px;
+  position: absolute;
+  top: 37.8%;
+  left: 75%;
+  transform: translateX(10%);
+  z-index: 9999999;
 }
 
 
 
 
-  
+
+
+
+
+
+
+ 
+
+
+
+@media screen and (max-width: 799px) { 
+
+  .body-container .containbodychainactive {
+    display: flex;
+    padding: "30px";
+    width: 90%;
 }
+
+  .body-container .main-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    color: #F5F5F5;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -441,29 +325,10 @@
 
 
 
-  
-  .body-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* align-items: flex-start; */
-    padding-top: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    /* flex-wrap: wrap; */
-}
-
-
-
-
   .body-container .main-page {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     /* margin-left: 20px; */
     /* background-color: blue; */
     color: #F5F5F5;
@@ -477,6 +342,7 @@
 .main-page .main-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   padding-left: 0px; 
   margin-top: 0px;
@@ -494,12 +360,7 @@
 
 
 
-.main-page .main-content p {
-  margin-bottom: 0px;
-  padding-top: 34px;
-  padding-left: 3px;
-  font-size: 10px;
-}
+
 
 
 .main-content .welcome {
@@ -511,15 +372,15 @@
 
 
 .main-content .welcome-more {
-  padding-left: 0px; 
   /* padding-bottom: 41px; */
-  height: 40px;
+  /*height: 40px;*/
+  /*padding-left: 10px;*/
 }
 
 
 .button-contain {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   margin-top: 30px;
   padding-left: 0;
@@ -534,6 +395,7 @@
   color: #F5F5F5;
   font-size: 16px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -546,6 +408,7 @@
   color: #F5F5F5;
   font-size: 16px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -562,7 +425,7 @@
 
 
 .littleinfo-contain .littleinfo {
-  background-color: #222;
+  background-color: #181619;
   text-align: center;
   width: 100%;
   height: 6em;
@@ -574,292 +437,42 @@
   margin: 6.2px;
 }
 
-
-
-
-
-
-
-
-
-  .body-container .orbits-container {
-    position: relative;
-    flex-basis: 47em;
-    height: 80vh;
-    margin-left: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-
-
-
-.orbits-container .sun {
-  background-color: yellow;
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  top: 36px;
-  right: -345px;
-}
-
-
-.orbits-container .points-0 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -225px;
-  right: -322px;
-}
-
-
-
-.orbits-container .points-1 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -200px;
-  right: -377px;
-}
-
-
-
-.orbits-container .points-2 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -199px;
-  right: -291px;
-}
-
-
-.orbits-container .points-3 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -174px;
-  right: -418px;
-}
-
-
-
-.orbits-container .points-4 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -88px;
-  right: -498px;
-}
-
-
-
-.orbits-container .points-5 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -61px;
-  right: -538px;
-}
-
-
-.orbits-container .points-6 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -111px;
-  right: -47px;
-}
-
-
+/* add something here for max-width: 709px */
 
   
 }
 
 
+/*
 
-@media screen and (max-width: 683px) {
-
+@media screen and (max-width: 504px) {
   .orbits-container .sun {
     background-color: yellow;
-    width: 1.5em;
+    width: 0.5em;
+    height: 0.5em;
     border-radius: 100%;
     position: relative;
-    top: 38px;
-    right: -331px;
+    top: 78px;
+    right: -242px;
 }
+
 
 
 .orbits-container .points-0 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -225px;
-  right: -314px;
-}
-
-
-.orbits-container .points-1 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -200px;
-  right: -366px;
-}
-
-
-.orbits-container .points-2 {
-  width: 1.5em;
+  font-size: 10px;
   border-radius: 100%;
   position: relative;
   bottom: -198px;
-  right: -283px;
+  right: -232px;
 }
 
-
-.orbits-container .points-3 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -174px;
-  right: -406px;
-}
-
-
-.orbits-container .points-4 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -88px;
-  right: -483px;
-}
-
-
-.orbits-container .points-5 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -61px;
-  right: -524px;
-}
-
-
-.orbits-container .points-6 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -111px;
-  right: -46px;
-}
-
-
-}
-
-
-
-
-@media screen and (max-width: 658px) {
-
-  .orbits-container .sun {
-    background-color: yellow;
-    width: 1.5em;
-    border-radius: 100%;
-    position: relative;
-    top: -1px;
-    right: -298px;
-}
-
-.orbits-container .points-0 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -191px;
-  right: -290px;
-}
-
-.orbits-container .points-1 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -163px;
-  right: -340px;
-}
-
-
-.orbits-container .points-2 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -160px;
-  right: -262px;
-}
-
-
-.orbits-container .points-3 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -135px;
-  right: -377px;
-}
-
-
-.orbits-container .points-4 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -54px;
-  right: -448px;
-}
-
-
-.orbits-container .points-5 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -27px;
-  right: -483px;
-}
-
-
-.orbits-container .points-6 {
-  width: 1.5em;
-  border-radius: 100%;
-  position: relative;
-  bottom: -71px;
-  right: -42px;
-}
-
-
-}
-
-
-
-@media screen and (max-width: 625px) {
-
-  .orbits-container .sun {
-    background-color: yellow;
-    width: 1.5em;
-    border-radius: 100%;
-    position: relative;
-    top: 63px;
-    right: -284px;
-}
-
-.orbits-container .points-0 {
-  border-radius: 100%;
-  position: relative;
-  bottom: -198px;
-  right: -284px;
-  font-size: 10px;
-}
 
 .orbits-container .points-1 {
   font-size: 10px;
   border-radius: 100%;
   position: relative;
-  bottom: -181px;
-  right: -333px;
+  bottom: -183px;
+  right: -269px;
 }
 
 
@@ -867,8 +480,8 @@
   font-size: 10px;
   border-radius: 100%;
   position: relative;
-  bottom: -184px;
-  right: -256px;
+  bottom: -182px;
+  right: -209px;
 }
 
 
@@ -876,17 +489,18 @@
   font-size: 10px;
   border-radius: 100%;
   position: relative;
-  bottom: -167px;
-  right: -368px;
+  bottom: -165px;
+  right: -302px;
 }
+
 
 
 .orbits-container .points-4 {
   font-size: 10px;
   border-radius: 100%;
   position: relative;
-  bottom: -95px;
-  right: -437px;
+  bottom: -106px;
+  right: -354px;
 }
 
 
@@ -894,21 +508,27 @@
   font-size: 10px;
   border-radius: 100%;
   position: relative;
-  bottom: -77px;
-  right: -469px;
+  bottom: -87px;
+  right: -381px;
 }
+
 
 
 .orbits-container .points-6 {
   font-size: 10px;
   border-radius: 100%;
   position: relative;
-  bottom: -128px;
-  right: -44px;
+  bottom: -124px;
+  right: -34px;
+}
 }
 
+*/
 
-}
+
+
+
+
 
 
 
@@ -916,23 +536,6 @@
 
 
 @media screen and (max-width: 608px) {
-  
-
-  
-  .body-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* align-items: flex-start; */
-    padding-top: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    /* flex-wrap: wrap; */
-}
 
 
 
@@ -940,7 +543,7 @@
   .body-container .main-page {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     /* margin-left: 20px; */
     /* background-color: blue; */
     color: #F5F5F5;
@@ -954,6 +557,7 @@
 .main-page .main-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   padding-left: 0px; 
   margin-top: 0px;
@@ -971,12 +575,6 @@
 
 
 
-.main-page .main-content p {
-  margin-bottom: 0px;
-  padding-top: 34px;
-  padding-left: 3px;
-  font-size: 10px;
-}
 
 
 .main-content .welcome {
@@ -988,15 +586,15 @@
 
 
 .main-content .welcome-more {
-  padding-left: 0px; 
   /* padding-bottom: 41px; */
-  height: 40px;
+  /*height: 40px;*/
+  /*padding-left: 10px;*/
 }
 
 
 .button-contain {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   margin-top: 30px;
   padding-left: 0;
@@ -1011,6 +609,7 @@
   color: #F5F5F5;
   font-size: 16px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -1023,6 +622,7 @@
   color: #F5F5F5;
   font-size: 16px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -1039,7 +639,7 @@
 
 
 .littleinfo-contain .littleinfo {
-  background-color: #222;
+  background-color: #181619;
   text-align: center;
   width: 100%;
   height: 6em;
@@ -1053,80 +653,6 @@
 
 
 
-
-
-
-  .orbits-container .sun {
-    background-color: yellow;
-    width: 1.5em;
-    border-radius: 100%;
-    position: relative;
-    top: 93px;
-    right: -289px;
-}
-
-.orbits-container .points-0 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -199px;
-  right: -278px;
-}
-
-.orbits-container .points-1 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -187px;
-  right: -327px;
-}
-
-
-.orbits-container .points-2 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -195px;
-  right: -254px;
-}
-
-
-.orbits-container .points-3 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -183px;
-  right: -363px;
-}
-
-
-.orbits-container .points-4 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -118px;
-  right: -430px;
-}
-
-
-.orbits-container .points-5 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -103px;
-  right: -464px;
-}
-
-
-.orbits-container .points-6 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -158px;
-  right: -42px;
-}
-
-
 }
 
 
@@ -1140,111 +666,24 @@
 
 
 
-@media screen and (max-width: 521px) {
-
-  .orbits-container .sun {
-    background-color: yellow;
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 100%;
-    position: relative;
-    top: 106px;
-    right: -248px;
-}
-
-.orbits-container .points-0 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -200px;
-  right: -240px;
-}
-
-.orbits-container .points-1 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -189px;
-  right: -275px;
-}
 
 
-.orbits-container .points-2 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -194px;
-  right: -213px;
-}
-
-
-.orbits-container .points-3 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -182px;
-  right: -308px;
-}
-
-
-.orbits-container .points-4 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -124px;
-  right: -363px;
-}
-
-
-.orbits-container .points-5 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -112px;
-  right: -391px;
-}
-
-
-.orbits-container .points-6 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: relative;
-  bottom: -157px;
-  right: -34px;
-}
-
-
-}
 
 
 
 
 @media screen and (max-width: 495px) {
 
- 
-  
-  .body-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* align-items: flex-start; */
-    padding-top: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    /* flex-wrap: wrap; */
-}
 
+
+   
 
 
 
   .body-container .main-page {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     /* margin-left: 20px; */
     /* background-color: blue; */
     color: #F5F5F5;
@@ -1258,6 +697,7 @@
 .main-page .main-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   padding-left: 0px; 
   margin-top: 0px;
@@ -1275,12 +715,6 @@
 
 
 
-.main-page .main-content p {
-  margin-bottom: 0px;
-  padding-top: 34px;
-  padding-left: 3px;
-  font-size: 10px;
-}
 
 
 .main-content .welcome {
@@ -1292,15 +726,15 @@
 
 
 .main-content .welcome-more {
-  padding-left: 0px; 
   /* padding-bottom: 41px; */
-  height: 40px;
+  /*height: 40px;*/
+  /*padding-left: 10px;*/
 }
 
 
 .button-contain {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   margin-top: 30px;
   padding-left: 0;
@@ -1315,6 +749,7 @@
   color: #F5F5F5;
   font-size: 16px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -1327,6 +762,7 @@
   color: #F5F5F5;
   font-size: 16px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -1343,7 +779,7 @@
 
 
 .littleinfo-contain .littleinfo {
-  background-color: #222;
+  background-color: #181619;
   text-align: center;
   width: 100%;
   height: 6em;
@@ -1363,7 +799,7 @@
 
 .body-container .orbits-container {
   flex-basis: 100%;
-  background-image: url(../../img/gimpedit.png);
+  /*background-image: url(../../img/gimpedit.png);*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1372,83 +808,6 @@
 
 
 
-
-
-
-.orbits-container .sun {
-  background-color: yellow;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 100%;
-  position: absolute;
-  right: 251px;
-  top: 104px;
-}
-
-
-
-.orbits-container .points-0 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 195px;
-  bottom: 321px;
-  /* background-color: green; */
-}
-
-.orbits-container .points-1 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 339px;
-  bottom: 265px;
-}
-
-.orbits-container .points-2 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 394px;
-  bottom: 238px;
-}
-
-
-
-.orbits-container .points-3 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 373px;
-  bottom: 361px;
-}
-
-
-.orbits-container .points-4 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 270px;
-  bottom: 400px;
-}
-
-
-.orbits-container .points-5 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 165px;
-  bottom: 94px;
-}
-
-
-.orbits-container .points-6 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 62px;
-  bottom: 266px;
-}
-
 }
 
 
@@ -1457,31 +816,32 @@
 
 
 
-@media screen and (max-width: 464px) {
-
+@media screen and (max-width: 469px) {
+  
 
   .body-container {
-    height: 100%;
-    width: 100%;
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* align-items: flex-start; */
-    padding-top: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    /* flex-wrap: wrap; */
-}
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-items: flex-start;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    height: 100%;
+  }
 
 
-
+  .body-container .containbodychainactive {
+    display: flex;
+    padding: "30px";
+    width: 100%;
+  }
+  
 
   .body-container .main-page {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     /* margin-left: 20px; */
     /* background-color: blue; */
     color: #F5F5F5;
@@ -1495,11 +855,12 @@
 .main-page .main-content {
   display: flex;
   flex-direction: column;
-  width: 91%;
+  align-items: center;
+  width: 100%;
   /* padding-left: 0px; */
   margin-top: 0px;
   gap: 45px;
-  padding: 16px;
+  /*padding: 16px;*/
 }
 
 
@@ -1513,12 +874,7 @@
 
 
 
-.main-page .main-content p {
-  margin-bottom: 0px;
-  padding-top: 34px;
-  padding-left: 3px;
-  font-size: 10px;
-}
+
 
 
 .main-content .welcome {
@@ -1531,16 +887,16 @@
 
 
 .main-content .welcome-more {
-  padding-left: 0px; 
+  /*padding-left: 0px;*/
   /* padding-bottom: 41px; */
-  height: 40px;
+  /*height: 40px;*/
   font-size: 15px;
 }
 
 
 .button-contain {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   margin-top: 30px;
   padding-left: 0;
@@ -1567,6 +923,7 @@
   color: #F5F5F5;
   font-size: 16px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -1583,7 +940,7 @@
 
 
 .littleinfo-contain .littleinfo {
-  background-color: #222;
+  background-color: #181619;
   text-align: center;
   width: 100%;
   height: 6em;
@@ -1600,96 +957,6 @@
 
 
 
-.body-container .orbits-container {
-  flex-basis: 100%;
-  background-image: url(../../img/gimpedit.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-
-
-
-
-
-.orbits-container .sun {
-  background-color: yellow;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 100%;
-  position: absolute;
-  right: 204px;
-  top: 107px;
-}
-
-
-
-.orbits-container .points-0 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 149px;
-  bottom: 314px;
-  /* background-color: green; */
-}
-
-.orbits-container .points-1 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 290px;
-  bottom: 265px;
-}
-
-.orbits-container .points-2 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 344px;
-  bottom: 237px;
-}
-
-
-
-.orbits-container .points-3 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 321px;
-  bottom: 354px;
-}
-
-
-.orbits-container .points-4 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 223px;
-  bottom: 393px;
-
-}
-
-
-.orbits-container .points-5 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 123px;
-  bottom: 98px;
-}
-
-
-.orbits-container .points-6 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 24px;
-  bottom: 263px;
-}
-
-
 
 }
 
@@ -1697,6 +964,19 @@
 
 
 
+
+@media screen and (max-width: 280px) { 
+  .body-container .eth-view {
+    position: relative;
+    flex-basis: 100%;
+    height: 100%;
+    margin-left: 0px; 
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
 
 
 
@@ -1730,30 +1010,10 @@ body {
 
 
 
-  .body-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* align-items: flex-start; */
-    padding-top: 39px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    /* flex-wrap: wrap; */
-}
-
-
-
-
-
-
 .body-container .main-page {
   position: relative;
   width: 94%;
-  height: 100%;
+  height: 88%;
   /* margin-left: 20px; */
   /* background-color: blue; */
   color: #F5F5F5;
@@ -1770,14 +1030,14 @@ body {
 .main-page .main-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  padding-left: 0;
-  margin-top: -16px;
   gap: 45px;
 }
 
 .main-content .main-content-holder {
   width: 100%;
+  padding: 20px;
 }
 
 
@@ -1798,19 +1058,13 @@ body {
 }
 
 
-.main-page .main-content p {
-  margin-bottom: 0px;
-  padding-top: 34px;
-  padding-left: 3px;
-  font-size: 10px;
-}
 
 
 
 .main-content .welcome-more {
   /* padding-bottom: 41px; */
-  height: 40px;
-  padding-left: 10px;
+  /*height: 40px;*/
+  /*padding-left: 10px;*/
 }
 
 
@@ -1818,7 +1072,7 @@ body {
 
 .button-contain {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   margin-top: 30px;
 }
@@ -1845,6 +1099,7 @@ body {
   color: #F5F5F5;
   font-size: 13px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -1859,7 +1114,7 @@ body {
 
 
 .littleinfo-contain .littleinfo {
-  background-color: #222;
+  background-color: #181619;
   text-align: center;
   width: 14em;
   height: 6em;
@@ -1875,95 +1130,6 @@ body {
 
 
 
-.body-container .orbits-container {
-  flex-basis: 100%;
-  background-image: url(../../img/gimpedit.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-
-
-
-
-
-.orbits-container .sun {
-  background-color: yellow;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 100%;
-  position: absolute;
-  right: 204px;
-  top: 107px;
-}
-
-
-
-.orbits-container .points-0 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 149px;
-  bottom: 314px;
-  /* background-color: green; */
-}
-
-.orbits-container .points-1 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 290px;
-  bottom: 265px;
-}
-
-.orbits-container .points-2 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 344px;
-  bottom: 237px;
-}
-
-
-
-.orbits-container .points-3 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 321px;
-  bottom: 354px;
-}
-
-
-.orbits-container .points-4 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 223px;
-  bottom: 393px;
-
-}
-
-
-.orbits-container .points-5 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 123px;
-  bottom: 98px;
-}
-
-
-.orbits-container .points-6 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 24px;
-  bottom: 263px;
-}
-
 
 }
 
@@ -1977,7 +1143,6 @@ body {
     flex-direction: column;
     width: 100%;
     padding-left: 0;
-    margin-top: -16px;
     gap: 36px;
     align-items: center;
 }
@@ -1985,7 +1150,7 @@ body {
   .body-container .main-page {
     position: relative;
     width: 92%;
-    height: 100%;
+    height: 88%;
     /* margin-left: 20px; */
     /* background-color: blue; */
     color: #F5F5F5;
@@ -2011,9 +1176,9 @@ body {
  
   
 .main-content .welcome-more {
-  padding-left: 0px;
+  /*padding-left: 0px; */
   /* padding-bottom: 41px; */
-  height: 40px;
+  /*height: 40px; */
   font-size: 14px;
 }
 
@@ -2022,106 +1187,10 @@ body {
 .button-contain {
   padding-left: 0px;
   display: flex;
-  justify-content: space-between;
-  width: 19em;
+  justify-content: space-evenly;
+  width: 100%;
   margin-top: 30px;
 }
-
-
-
-
-
-
-.body-container .orbits-container {
-  flex-basis: 100%;
-  background-image: url(../../img/gimpedit.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-
-
-
-
-
-.orbits-container .sun {
-  background-color: yellow;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 100%;
-  position: absolute;
-  right: 187px;
-  top: 107px;
-}
-
-
-
-.orbits-container .points-0 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 133px;
-  bottom: 314px;
-  /* background-color: green; */
-}
-
-.orbits-container .points-1 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 273px;
-  bottom: 266px;
-}
-
-.orbits-container .points-2 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 325px;
-  bottom: 237px;
-}
-
-
-
-.orbits-container .points-3 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 307px;
-  bottom: 353px;
-}
-
-
-.orbits-container .points-4 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 208px;
-  bottom: 392px;
-}
-
-
-.orbits-container .points-5 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 106px;
-  bottom: 97px;
-}
-
-
-.orbits-container .points-6 {
-  font-size: 10px;
-  border-radius: 100%;
-  position: absolute;
-  right: 10px;
-  bottom: 266px;
-}
-
-
-
 
 }
 
@@ -2140,25 +1209,6 @@ body {
   font-size: 16px;
   overflow-x: hidden;
   width: 100%;
-}
-
-
-
-
-
-  .body-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* align-items: flex-start; */
-    padding-top: 39px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    /* flex-wrap: wrap; */
 }
 
 
@@ -2186,9 +1236,9 @@ body {
 .main-page .main-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   padding-left: 0;
-  margin-top: -16px;
   gap: 45px;
 }
 
@@ -2214,19 +1264,13 @@ body {
 }
 
 
-.main-page .main-content p {
-  margin-bottom: 0px;
-  padding-top: 34px;
-  padding-left: 3px;
-  font-size: 10px;
-}
 
 
 
 .main-content .welcome-more {
-  padding-left: -9px;
   /* padding-bottom: 41px; */
-  height: 40px;
+  /*height: 40px;*/
+  /*padding-left: 10px;*/
 }
 
 
@@ -2235,8 +1279,8 @@ body {
 .button-contain {
   padding-left: 10px;
   display: flex;
-  justify-content: space-between;
-  width: 19em;
+  justify-content: space-evenly;
+  width: 100%;
   margin-top: 30px;
 }
 
@@ -2262,6 +1306,7 @@ body {
   color: #F5F5F5;
   font-size: 13px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -2276,7 +1321,7 @@ body {
 
 
 .littleinfo-contain .littleinfo {
-  background-color: #222;
+  background-color: #181619;
   text-align: center;
   width: 14em;
   height: 6em;
@@ -2291,5 +1336,7 @@ body {
 
   
 }
+
+
 
 
