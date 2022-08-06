@@ -469,5 +469,83 @@
       /* margin-left: 80px; */
     }
 
-    
+
+}
+
+
+
+@media screen and (max-width: 366px) { 
+
+
+  .main-page .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 84%;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 32px;
+    height: 600px;
+    position: relative;
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(116.29deg, rgba(255, 255, 255, 0.35) -29.94%, rgba(255, 255, 255, 0.26) -29.93%, rgba( 255,255, 255, 0.1) 101.76%);
+    box-shadow: inset 4px 4px 4px rgb(255 255 255 / 15%), inset -4px -4px 4px rgb(245 245 245 / 11%);
+}
+
+.div-one {
+  display: flex;
+  padding-left: 0px; 
+}
+
+
+  .header-one {
+    font-family: 'Space Grotesk', sans-serif !important;
+    margin-bottom: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0.92 !important;
+    font-size: 2.9em !important;
+}
+
+
+.div-two-text {
+  width: 50%;
+  font-family: 'Space Grotesk', sans-serif !important;
+  padding-left: 4px !important;
+  font-size: 0.6rem !important;
+}
+
+
+.welcome-divTwo {
+  display: flex;
+  justify-content: center;
+  /* width: 50%; */
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  padding-right: 0px;
+}
+
+
+.below-Content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+   margin-left: 0px; 
+}
+
+
+
+.img {
+  width: 46%;
+  height: auto;
+  margin-top: 269px;
+  position: absolute;
+  right: -3%;
+}
+
+
 }

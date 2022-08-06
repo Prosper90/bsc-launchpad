@@ -633,60 +633,6 @@
 
 
 
- @media screen and (max-width: 366px) {
-    .main-info .main-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #F05454;
-        width: 87%;
-        height: 9em;
-        border-radius: 6px;
-        font-size: 14px;
-    }
-
-    .info-eth {
-        background-color: #000;
-        width: 15.5em;
-        height: 23em;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        align-items: center;
-    }
-
-
-    .tokeninfo-container .choose-chain {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000;
-        width: 15em;
-        height: 2.5em;
-        margin-top: 30px;
-        border-radius: 17px;
-    }
-
-
-
-    .tokeninfo-container .info {
-        background-color: #000;
-        width: 17.5em;
-        height: 23em;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-    }
-
-
- }
-
-
 
 
  @media screen and (max-width: 495px) {
@@ -803,4 +749,37 @@
         top: 97%;
         margin-top: 60px;
     }
+ }
+
+
+
+
+
+
+ @media screen and (max-width: 366px) { 
+   
+    .tokeninfo-container {
+        background: linear-gradient(116.29deg, rgba(255, 255, 255, 0.35) -29.94%, rgba(255, 255, 255, 0.26) -29.93%, rgba( 255,255, 255, 0.1) 101.76%);
+        box-shadow: inset 4px 4px 4px rgb(255 255 255 / 15%), inset -4px -4px 4px rgb(245 245 245 / 11%);
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
+        flex-basis: 30em;
+        height: 18%;
+        width: 86%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        z-index: 5000;
+        flex-grow: 1;
+        position: absolute;
+        border-radius: 70px;
+        left: 6%;
+        right: 0px;
+        top: 97%;
+        margin-top: 60px;
+    }
+
+     
  }

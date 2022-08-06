@@ -77,7 +77,7 @@ export default function Tokeninfo(props) {
 
   return (
     <div className={ props.changeTokenView === "bnb" ? 'tokeninfo-containertwo' : 'tokeninfo-container' } 
-    ref={myRef} >
+    ref={ props.changeTokenView === "bnb" ? myRef : null } >
 
 
  
