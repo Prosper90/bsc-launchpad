@@ -58,7 +58,7 @@ export default function Tokeninfo(props) {
      // console.log("In here");
       if (!myRef.current.contains(event.target)) {
           clearView()
-         console.log("called outside click");
+         //console.log("called outside click");
       }
   
     }

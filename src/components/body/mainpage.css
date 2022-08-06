@@ -415,4 +415,59 @@
       box-shadow: inset 4px 4px 4px rgb(255 255 255 / 15%), inset -4px -4px 4px rgb(245 245 245 / 11%);
   }
 
-   }
+
+  .div-one {
+    display: flex;
+    /* padding-left: 20px; */
+  }
+
+
+  .welcome-divTwo {
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+    align-items: center;
+    text-align: center;
+    /* padding-right: 100px; */
+ }
+
+
+ .below-Content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 80px; */
+}
+
+}
+
+
+
+@media screen and (max-width: 400px) {  
+
+      .welcome-divTwo {
+        display: flex;
+        justify-content: center;
+        /* width: 50%; */
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        /* padding-right: 100px; */
+    }
+
+
+    .below-Content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-content: center;
+      align-items: center;
+      /* margin-left: 80px; */
+    }
+
+    
+}
