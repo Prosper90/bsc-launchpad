@@ -49,7 +49,7 @@ export default function Adminpage() {
 
         //make a call to the database and save the new token
        //save the amount transfered to the database
-      const addToken = await fetch(`http://localhost:8000/project`, 
+      const addToken = await fetch(`https://bscapp-backend.herokuapp.com/project`, 
       {
         method: 'POST',   
          headers: {
