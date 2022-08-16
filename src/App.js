@@ -4,6 +4,7 @@ import Body from "./components/body/Body";
 import Partners from './components/pool/Partners';
 import Staking from './components/staking/Staking';
 import Buybas from './components/buybas/Buybas';
+import Admin from "./components/admin/Admin";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
@@ -28,6 +29,10 @@ function App() {
 
               <Route  path="/buying">
                 <Buybas className="Buybas" />
+              </Route>
+
+              <Route  path="/admin">
+                <Admin className="Admin" />
               </Route>
 
         </Switch>

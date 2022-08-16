@@ -2,14 +2,34 @@ import React, { useEffect, useState, useRef } from 'react';
 import "./tokeninfo.css";
 import Typography from '@mui/material/Typography';
 import Astronaut from "../../img/Astronaut.png";
+import Padding from "../../img/basetwo.png";
 import World from "../../img/Worldmain.png";
+import styled from "styled-components";
+import axios from "axios";
 
+
+
+
+const Head = styled.div`
+display: flex;
+margin-top: 10px;
+justify-content: space-evenly;
+align-items: center;
+width: 85%;
+background-image: url(${({ imgurl  }) => imgurl });
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding: 5px;
+position: relative;
+`;
 
 export default function Tokeninfo(props) {
 
   
   const [currentChain, chooseChain] = useState(true);
-  const [showchainInfo, changeshowchainInfo] = useState(true)
+  const [showchainInfo, changeshowchainInfo] = useState(true);
+  const [trending, setTrending] = useState([]);
   //ref
   const myRef = useRef(null);
 
@@ -21,12 +41,6 @@ export default function Tokeninfo(props) {
   
 
 
-  
-  const switchInfo = (props) => {
-    changeshowchainInfo(false);
-    //props.changeDirection(true)
-    //console.log(props.getDirection +" after switchInfo");
-  }
   
   
 
@@ -47,7 +61,50 @@ export default function Tokeninfo(props) {
   }
 
 
+
+  const voteToken = async (data) => {
+                 //make a call to the database and save the new token
+       //save the amount transfered to the database
+       const vote = await fetch(`https://bscapp-backend.herokuapp.com/vote`, 
+       {
+         method: 'POST',   
+          headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ 
+            id: data, 
+         })
+      }
+      );
+      const checkvote = await vote.json();
+      console.log(checkvote);
+  }
+
+
   useEffect(() => {
+
+
+
+    const getTrending = async () => {
+      //make a call to the database and get all tokens available
+
+      const res = await axios.get(`https://bscapp-backend.herokuapp.com/trending`);
+
+      console.log(res.data);
+
+      setTrending(res.data);
+  
+    }
+
+
+
+    getTrending();
+
+
+
+
+
 
     const handleClickOutside = (event) => {
       //console.log(myRef);
@@ -73,7 +130,7 @@ export default function Tokeninfo(props) {
 
 
 
-  })
+  }, [])
 
   return (
     <div className={ props.changeTokenView === "bnb" ? 'tokeninfo-containertwo' : 'tokeninfo-container' } 
@@ -84,19 +141,19 @@ export default function Tokeninfo(props) {
        { props.changeTokenView === "bnb"
        ?
         (
-          <div className='info'>
+        <div className='info'>
             
-              <>
-              <div className='head-info'>
-              
-              <h5>{props.eachData.tokenName}</h5>
+   
+          <Head imgurl={props.eachData.imgUrl} >
+               <div className="img-overlay"></div>
+              <h4 style={{ zIndex: "1" }}>{props.eachData.tokenName}</h4>
   
               <div className='detail-info'>
                 <div className='detail-info-info'><p>votes</p><p>{props.eachData.votes}</p></div>
-                <div className='detail-info-info'><p>MC</p><p>$ {props.eachData.MC}</p></div>
+                <div className='detail-info-info'><p>MC</p><p> $3000 </p></div>
               </div>
   
-              </div>
+          </Head>
   
               
               <div className='text-info'>
@@ -104,12 +161,10 @@ export default function Tokeninfo(props) {
               </div>
               
    
-              <a className='vote-button' href='vote'> vote </a>
-              </>
+              <div className='vote-button' onClick={ ()=> voteToken(props.eachData._id)}> vote </div>
 
-            
-   
-     
+
+                
         </div>
 
        ) 
@@ -134,10 +189,33 @@ export default function Tokeninfo(props) {
          <div className='main-info'>
 
             <div className='main-content'>
-               <img className='img-other' src={Astronaut} alt='astronut' />
+               <div className='contain-trendinfo'>
+                 {trending.length == 0 ?
+                   <h5>Nothing here</h5>
+                 :
+
+                     trending.map((data, index) => {
+                      console.log(data);
+                    if(index !== 2){
+                      return(
+                      <div className='main-trendContain'>
+                        <h5>{data.tokenName}</h5>
+                        <div>{data.votes}</div>
+                      </div>
+                      )
+                    }
+
+
+                  }) 
+                 
+                 }
+
+
+               </div>
+               <img className='img-other' src={Padding} alt='astronut' />
                <div>
-                  <Typography variant="caption" display="block" gutterBottom>
-                    About us
+                  <Typography  variant="caption" display="block" gutterBottom>
+                    Trending
                   </Typography>
                 </div>
             </div>

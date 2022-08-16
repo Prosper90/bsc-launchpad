@@ -57,6 +57,8 @@ export const Control = () => {
       controls.keys = { LEFT: 0, RIGHT: 0, UP: 0, BOTTOM: 0 };
       controls.enablePan = false;
       controls.enableRotate = false;
+      controls.minZoom = 5;
+      controls.maxZoom = 30;
       controls.target.set(4.5, 0, 4.5);
       //controls.maxPolarAngle = (45 + 10) * Math.PI / 300;
 

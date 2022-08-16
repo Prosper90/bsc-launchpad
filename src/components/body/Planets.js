@@ -1,10 +1,9 @@
 import React from 'react';
 import "./svgimages.css";
-import styled from 'styled-components';
-import { useTexture, PerspectiveCamera, OrbitControls, Ring, RenderTexture  } from "@react-three/drei";
-import * as THREE from "three";
+import { useTexture} from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { useRef } from "react";
+import planetbase from "../../img/logo.jpg";
+
 
 
 
@@ -13,6 +12,10 @@ import { useRef } from "react";
 
 export default function SvgImages(props) {
   const terrainTexture = useTexture(props.eachPlanet);
+  const baseTexture = useTexture(planetbase);
+
+  //console.log(props.eachPlanet);
+  //console.log(props);
 
   const random = (a, b) => a + Math.random() * b;
 
@@ -22,7 +25,7 @@ export default function SvgImages(props) {
   const zRadius = props.planetrad;
   const speed = random(0.5, 0.5);
   const offset = random(0, Math.PI * 2);
-  const rotationSpeed = random(0.008, 0.004);
+
 
  
   const planetRef = React.useRef();
@@ -35,7 +38,6 @@ export default function SvgImages(props) {
     if(props.index === props.getindex){
       planetRef.current.position.x = x;
       planetRef.current.position.z = z;
-      planetRef.current.rotation.y += rotationSpeed;
     }
 
   });
@@ -48,7 +50,7 @@ export default function SvgImages(props) {
 
 
   return (
-    <mesh    >
+    <mesh  key={props.id} >
 
 
       <mesh ref={props.index === props.getindex ? planetRef : console.log("in Here") }
@@ -60,7 +62,7 @@ export default function SvgImages(props) {
            <pointLight position={[0, 0, 0]} />
          </mesh>
           <sphereGeometry />
-          <meshStandardMaterial  map={terrainTexture}/>
+          <meshStandardMaterial  map={baseTexture}/>
       </mesh>
 
 
